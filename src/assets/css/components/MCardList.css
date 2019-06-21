@@ -1,0 +1,19 @@
+.mCardList {
+    list-style: none;
+    display: grid;
+    padding: 10px;
+}
+
+@media (min-width:970px) {
+    .mCardList {
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (max-width:700px) {
+    .mCardList {
+        grid-template-columns: 1fr;
+    }
+}

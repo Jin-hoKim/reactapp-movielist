@@ -1,26 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import SearchBox from  "./components/SearchBox";
+import MCardList from "./components/MCardList";
+import "./assets/css/main.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component 
+{
+  state = {
+  };
+
+  render() {
+    return(
+      <div className="app">
+        <SearchBox id="searchBox"/>
+        <MCardList id="mcardList" mlist={this.state.mlist} />
+      </div>
+    )
+  }
+
+  getMovieList = () => {
+    return (
+      fetch("https://yts.lt/api/v2/list_movies.json?sort_by=like_count")
+      .then(res=>res.json())
+      .then(json=>json.data.movies)
+      .catch(err=>{
+        console.log(err.message);
+      })
+    )
+  }
+
+  async componentDidMount() {
+    this.setState({
+      mlist: await this.getMovieList()
+    });
+  }
 }
 
 export default App;

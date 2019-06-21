@@ -1,0 +1,117 @@
+.mCard {
+    max-height: 235px;
+    padding: 0px 10px 20px 20px;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+.mCard:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.mCard .mCard__box {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 15px;
+}
+
+.mCardPoster {
+    margin-top: -20px;
+}
+
+.mCardPoster img {
+    border-radius: 10px;
+    max-height: 250px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.9);
+}
+
+.mCard__info {
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.35);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 0px 10px;
+    margin-top: 20px;
+}
+
+.mCardTitle {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.mCardTitle .mCardTitle__title {
+    margin-right: 5px;
+}
+
+.mCardTitle .mCardTitle__rating {
+    font-style: italic;
+    font-size: 25px;
+    color: yellow;
+    align-items: center;
+}
+
+.mCardTitle .mCardTitle__rating i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.mCardGenres,
+.mCardTorrents {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.mCardTorrents {
+    height: 100%;
+    align-items: flex-end;
+}
+
+.mCardGenre,
+.mCardTorrent {
+    text-transform: lowercase;
+    color: rgba(255, 255, 255, 0.4);
+    margin-right: 5px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.mCardTorrent {
+    font-size: 18px;
+    margin-right: 15px;
+}
+
+.mCardGenre:hover,
+.mCardTorrent:hover {
+    color: white;
+}
+
+.mCardSynopsis {
+    max-height: 210px;
+    font-style: italic;
+    font-size: 13px;
+    line-height: 15px;
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.mCardSynopsis:hover {
+    color: white;
+}
+
+.mCardTorrents {
+    list-style: none;
+
+}
