@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/reactapp-movielist/static/css/main.97dea922.chunk.css",
+    "main.js": "/reactapp-movielist/static/js/main.404feaad.chunk.js",
+    "main.js.map": "/reactapp-movielist/static/js/main.404feaad.chunk.js.map",
+    "runtime~main.js": "/reactapp-movielist/static/js/runtime~main.9b585acb.js",
+    "runtime~main.js.map": "/reactapp-movielist/static/js/runtime~main.9b585acb.js.map",
+    "static/js/2.b295fdd4.chunk.js": "/reactapp-movielist/static/js/2.b295fdd4.chunk.js",
+    "static/js/2.b295fdd4.chunk.js.map": "/reactapp-movielist/static/js/2.b295fdd4.chunk.js.map",
+    "index.html": "/reactapp-movielist/index.html",
+    "precache-manifest.912ed5f37f3d82600c77c291f49f2809.js": "/reactapp-movielist/precache-manifest.912ed5f37f3d82600c77c291f49f2809.js",
+    "service-worker.js": "/reactapp-movielist/service-worker.js",
+    "static/css/main.97dea922.chunk.css.map": "/reactapp-movielist/static/css/main.97dea922.chunk.css.map"
+  }
+}
