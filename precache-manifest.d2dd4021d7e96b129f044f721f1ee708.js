@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8e6fc8072fe1a9b7d879724130c5ac4b",
+    "revision": "d74368c0877376c192976d3b18098427",
     "url": "/reactapp-movielist/index.html"
   },
   {
